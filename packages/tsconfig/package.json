@@ -1,0 +1,20 @@
+{
+  "name": "@vini-movies/tsconfig",
+  "version": "0.1.0",
+  "description": "Shared TypeScript configurations for all Vini Movies apps and packages.",
+  "main": "base.json",
+  "private": true,
+  "license": "MIT",
+  "author": "Vinícius Silva Santos",
+  "keywords": [
+    "typescript",
+    "config",
+    "monorepo",
+    "tsconfig"
+  ],
+  "scripts": {
+    "check": "tsc --showConfig -p node.json",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist .turbo .tsbuildinfo"
+  }
+}
