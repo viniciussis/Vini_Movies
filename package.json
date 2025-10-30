@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
+    "@prisma/cli": "^2.20.1",
     "eslint": "^9.37.0",
     "husky": "^8.0.0",
     "lint-staged": "^16.2.6",
