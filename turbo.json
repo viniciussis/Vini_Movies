@@ -18,6 +18,10 @@
     },
     "clean": {
       "cache": false
-    }
+    },
+    "globalDependencies": [
+      "**/.env.*",
+      "tsconfig.base.json"
+    ]
   }
 }
