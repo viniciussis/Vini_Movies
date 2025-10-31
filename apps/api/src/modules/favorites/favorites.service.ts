@@ -3,7 +3,7 @@ import {
   NotFoundException,
   Injectable,
 } from '@nestjs/common';
-import { PrismaService } from 'src/common/prisma/prisma.service';
+import { PrismaService } from '@/plugins/database/services/prisma.service';
 import { CreateFavorite } from '@vini-movies/types';
 import { Prisma } from '@prisma/client';
 
@@ -13,7 +13,6 @@ export class FavoritesService {
 
   async create(dto: CreateFavorite) {
     try {
-      // Tenta criar o novo favorito no banco
       return await this.prisma.favoriteMovie.create({
         data: dto,
       });
