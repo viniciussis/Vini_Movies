@@ -11,7 +11,7 @@ export type CreateFavorite = z.infer<typeof createFavoriteSchema>;
 
 export const favoriteMovieSchema = createFavoriteSchema.extend({
   id: z.number().int(),
-  createdAt: z.date(),
+  createdAt: z.coerce.date(), 
 });
 
 export type FavoriteMovie = z.infer<typeof favoriteMovieSchema>;
